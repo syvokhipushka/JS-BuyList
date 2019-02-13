@@ -1,8 +1,118 @@
-h1 {
-    color: green;
+body{
+    background: lightblue;
+}
+.mainContainer{
+    width: 80%;
+    position: relative;
+    top: 80px;
+    left: 10%;
+    font: 11pt sans-serif;
+}
+    .block1 {
+    width: 60%;
+    margin-right: 2%;
+    background: #ccc;
+    padding: 10px;
+    border-radius: 6px;
+    float: left;
+}
+.inputNewItem{
+    display: inline-block
+    width: 80%;
+    margin-left: 2%; 
+    font: 11pt sans-serif;
+    border: 5px black;
 }
 
-.text2018 {
-    color: #ff59c0;
-    font-size: 40px;
+.inputNewItem1{
+    width: 75%;
+    margin: 0.5%;
 }
+.confirmingProduct{
+     border-radius: 6px;
+    font: 11pt sans-serif;
+}
+.bananas, .cheese, .milk{
+  padding: 15px;
+    margin: 3%;
+  background-color: #fcfaed;
+    height: 30px;
+}
+
+.name1,.minus1,.amount1,.plus1{
+    float: left;
+    padding: 1px;
+    margin: 3%;
+    margin-top: 1%;
+    margin-left: 4.5%;
+}
+.name1{
+    width: auto;
+    background: #bbeef9;
+}
+
+.minus1{
+    background: green;  
+}
+
+.plus1{
+    background: darkred;
+}
+
+.amount1{
+    margin: 0%;
+    margin-top: 1.5%;
+}
+
+.buy1,.delete1{
+    border-radius: 6px;
+    float: right;
+    height: 30px;
+}
+
+   .block2 {
+    width: 30%;
+    background: white; 
+    padding: 10px;
+    border-radius: 6px;
+    float: left; 
+}
+
+.left, .bought{
+    position: relative;
+    padding: inherit;
+    background: #bbeef9;
+        border-bottom: 1px solid black;
+}
+.empty{
+}
+
+.left{
+    height: 100px;
+}
+
+.leftFont, .boughtFont{
+     width: 100%;
+    padding: 5px;
+    margin-left:  -5px;
+    font: 13pt sans-serif;
+    border-bottom: 1px solid black;
+    background: white;
+}
+
+.bananas2, .cheese2, .milk2{
+    margin: 2%;
+    float: left;
+    border-bottom: 1px solid black;    
+}
+
+.bananas3, .cheese3, .milk3{
+    margin: 2%;
+  background-color: darkred;
+    color: rgb(1000, 1000, 1000);
+    float: left;
+    border-radius: 100px;
+} 
+
+
+
