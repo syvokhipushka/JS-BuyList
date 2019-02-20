@@ -1,90 +1,174 @@
-body{
-    background: lightblue;
+body {
+    background: #ABABAB;
 }
-.mainContainer{
-    width: 80%;
+.mainContainer {
+    width: 95%;
     position: relative;
     top: 80px;
-    left: 10%;
-    font: 11pt sans-serif;
+    left: 5%;
+    font: 16px "Trebuchet MS", Arial, Helvetica, sans-serif;
+    
 }
-    .block1 {
+.block1 {
     width: 60%;
     margin-right: 2%;
-    background: #ccc;
+    background: #F1F1F1;
     padding: 10px;
+    padding-right: 0px;
     border-radius: 6px;
     float: left;
 }
-.inputNewItem{
-    display: inline-block
-    width: 80%;
-    margin-left: 2%; 
-    font: 11pt sans-serif;
-    border: 5px black;
+.inputNewItem {
+    margin-left: 2%;
 }
 
-.inputNewItem1{
-    width: 75%;
-    margin: 0.5%;
+.inputNewItem1 {
+    padding: 5px;
+    padding-left: 10px;
+    height: 32px;
+    width: 83%;
 }
-.confirmingProduct{
-     border-radius: 6px;
-    font: 11pt sans-serif;
+.confirmingProduct {
+    position: fixed;
+    text-decoration: none;
+    padding: 12px 11px;
+    border: none;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius:4px;
+    font: 19px "Trebuchet MS", Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    background: #3415B0;
+    box-shadow: 2px 2px 0px #bababa;
 }
-.bananas, .cheese, .milk{
-  padding: 15px;
-    margin: 3%;
-  background-color: #fcfaed;
+
+    .confirmingProduct:hover {
+        background: #3E2D84;
+    }
+
+    .confirmingProduct:active {
+        background: #1C0772;
+    }
+
+.bananas, .cheese, .milk {
+    width:89%;
+    padding: 20px;
+    margin: 2%;
     height: 30px;
+    border-bottom: 1px solid lightgray;
 }
 
 .name1,.minus1,.amount1,.plus1{
     float: left;
     padding: 1px;
-    margin: 3%;
-    margin-top: 1%;
     margin-left: 4.5%;
 }
-.name1{
-    width: auto;
-    background: #bbeef9;
+
+.name1 {
+    margin-top: 1%;
+    font: 16px "Trebuchet MS", Arial, Helvetica, sans-serif;
+    margin-left:2%;
 }
 
-.minus1{
-    background: green;  
-  transition: 0.2s;
+.genAmount {
+    margin-left:30%;
+}
+
+.minus1 {
+    padding: 10px 16.5px;
+    border: none;
+    border-radius: 50px;
+    font: 16px Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    background: #F80012;
+    box-shadow: 2px 2px 0px #bababa;
+}
+    .minus1:hover {
+        background: #BA2F39;
+    }
+
+    .minus1:active {
+        background: #A2000C;
+    }
+
+.plus1 {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 50px;
+    font: 16px Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    background: #1DD300;
+    box-shadow: 2px 2px 0px #bababa;
+}
+
+    .plus1:hover {
+        background: #389E28;
+    }
+
+    .plus1:active {
+        background: #138900;
+    }
+
+.amount1 {
+    padding: 10px;
+    border-radius: 2px;
+    font-weight: bold;
+    background: #E1E1E1;
+    color: #939393;
+}
+
+.changeButtons {
+    margin-left: 78%;
+}
+
+.delete1 {
+    padding: 10px 13px;
+    border: none;
+    border-radius: 2px;
+    font: 16px Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+    background: #F80012;
+    box-shadow: 3px 2px 0px #bababa;
+}
+    .delete1:hover {
+        background: #BA2F39
+    }
+
+    .delete1:active {
+        background: #A2000C;
+    }
+
+.buy1 {
+    padding: 10px 30px;
+    border: 1px solid #B8B8B8;
+    border-radius: 2px;
+    font: 16px "Trebuchet MS", Arial, Helvetica, sans-serif;
+    color: #808080;
+    background: #F1F1F1;
+    box-shadow: 3px 2px 0px #bababa;
+}
+    .buy1:hover {
+        background: #E4E4E4;
+    }
+
+    .buy1:active {
+        background: #ABABAB;
+        color: #F1F1F1;
+    }
+
+.block2 {
+    width: 30%;
+    position: relative;
+    background: #F1F1F1;
+    padding: 10px;
+    border-radius: 6px;
     float: left;
 }
 
-.plus1{
-    background: darkred;
-}
-
-.amount1{
-    margin: 0%;
-    margin-top: 1.5%;
-}
-
-.buy1,.delete1{
-    border-radius: 6px;
-    float: right;
-    height: 30px;
-}
-
-   .block2 {
-    width: 30%;
-    background: white; 
-    padding: 10px;
-    border-radius: 6px;
-    float: left; 
-}
-
-.left, .bought{
+.left, .bought {
     position: relative;
     padding: inherit;
-    background: #bbeef9;
-        border-bottom: 1px solid black;
+    border-bottom: 1px solid lightgray;
 }
 .empty{
 }
@@ -93,28 +177,57 @@ body{
     height: 100px;
 }
 
-.leftFont, .boughtFont{
-     width: 100%;
+.leftFont, .boughtFont {
+    width: 100%;
     padding: 5px;
-    margin-left:  -5px;
+    margin-left: -5px;
     font: 13pt sans-serif;
-    border-bottom: 1px solid black;
-    background: white;
+    border-bottom: 1px solid lightgray;
 }
 
-.bananas2, .cheese2, .milk2{
+.bananas2, .cheese2, .milk2 {
     margin: 2%;
+    margin-right: 0%;
     float: left;
-    border-bottom: 1px solid black;    
+    padding: 7px 7px;
+    border: solid 2px #D1D1D1;
+    font: 15px "Trebuchet MS", Arial, Helvetica, sans-serif;
+    color: #2b2b2b;
+    background: #D1D1D1;
 }
 
-.bananas3, .cheese3, .milk3{
+.bananas3, .cheese3, .milk3 {
     margin: 2%;
-  background-color: darkred;
-    color: rgb(1000, 1000, 1000);
+    margin-left: 0%;
     float: left;
-    border-radius: 100px;
-} 
+    padding: 7px 7px;
+    border: solid 2px #D1D1D1;
+    font: 15px "Trebuchet MS", Arial, Helvetica, sans-serif;
+    color: white;
+    background: #FFCF00;
+}
 
+.badge {
+    position: fixed;
+    width: 250px;
+    height: 300px;
+    top: 85%;
+    left: 6%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    text-align: center;
+    padding: 31px 59px;
+    border: none;
+    font: 38px Arial, Helvetica, sans-serif;
+    color: #58356A;
+    background: #58356A;
+    box-shadow: 3px -3px 0px gray;
+    transition: all 1s ease;
+}
 
+    .badge:hover {
+        top: 80%;
+        color: #B8B8B8;
+        background: #9F5250;
+    }
 
