@@ -53,6 +53,8 @@ body{
 
 .minus1{
     background: green;  
+  transition: 0.2s;
+    float: left;
 }
 
 .plus1{
