@@ -1,15 +1,21 @@
 body {
     background: #ABABAB;
 }
+
+div {
+    border: 3px solid #4CAF50;
+}
+
 .mainContainer {
     width: 95%;
     position: relative;
     top: 80px;
     left: 5%;
     font: 16px "Trebuchet MS", Arial, Helvetica, sans-serif;
-    
 }
+
 .block1 {
+    box-sizing: border-box;
     width: 60%;
     margin-right: 2%;
     background: #F1F1F1;
@@ -18,23 +24,29 @@ body {
     border-radius: 6px;
     float: left;
 }
+
 .inputNewItem {
     margin-left: 2%;
+    margin-top: 0;
+    box-sizing: border-box;
+    width: 94.35%;
 }
 
 .inputNewItem1 {
     padding: 5px;
     padding-left: 10px;
     height: 32px;
-    width: 83%;
+    width: 82%;
 }
+
 .confirmingProduct {
-    position: fixed;
+    position: absolute;
     text-decoration: none;
     padding: 12px 11px;
+    margin-left: -5px;
     border: none;
     border-top-right-radius: 4px;
-    border-bottom-right-radius:4px;
+    border-bottom-right-radius: 4px;
     font: 19px "Trebuchet MS", Arial, Helvetica, sans-serif;
     color: #ffffff;
     background: #3415B0;
@@ -50,14 +62,14 @@ body {
     }
 
 .bananas, .cheese, .milk {
-    width:89%;
+    width: 89%;
     padding: 20px;
     margin: 2%;
     height: 30px;
     border-bottom: 1px solid lightgray;
 }
 
-.name1,.minus1,.amount1,.plus1{
+.name1, .minus1, .amount1, .plus1 {
     float: left;
     padding: 1px;
     margin-left: 4.5%;
@@ -66,11 +78,12 @@ body {
 .name1 {
     margin-top: 1%;
     font: 16px "Trebuchet MS", Arial, Helvetica, sans-serif;
-    margin-left:2%;
+    margin-left: 2%;
 }
 
 .genAmount {
-    margin-left:30%;
+    margin-left: 30%;
+    width: 150px;
 }
 
 .minus1 {
@@ -82,6 +95,7 @@ body {
     background: #F80012;
     box-shadow: 2px 2px 0px #bababa;
 }
+
     .minus1:hover {
         background: #BA2F39;
     }
@@ -117,7 +131,10 @@ body {
 }
 
 .changeButtons {
+    padding: 0;
     margin-left: 78%;
+    box-sizing: border-box;
+    width: 175px;
 }
 
 .delete1 {
@@ -130,6 +147,7 @@ body {
     background: #F80012;
     box-shadow: 3px 2px 0px #bababa;
 }
+
     .delete1:hover {
         background: #BA2F39
     }
@@ -147,6 +165,7 @@ body {
     background: #F1F1F1;
     box-shadow: 3px 2px 0px #bababa;
 }
+
     .buy1:hover {
         background: #E4E4E4;
     }
@@ -170,10 +189,11 @@ body {
     padding: inherit;
     border-bottom: 1px solid lightgray;
 }
-.empty{
+
+.empty {
 }
 
-.left{
+.left {
     height: 100px;
 }
 
@@ -185,10 +205,18 @@ body {
     border-bottom: 1px solid lightgray;
 }
 
-.bananas2, .cheese2, .milk2 {
+.productLeft {
+    width: 90px;
+    position: relative;
+    float: left;
+    box-sizing: border-box;
+}
+
+.name2 {
+    position: absolute;
+    box-sizing: border-box;
     margin: 2%;
     margin-right: 0%;
-    float: left;
     padding: 7px 7px;
     border: solid 2px #D1D1D1;
     font: 15px "Trebuchet MS", Arial, Helvetica, sans-serif;
@@ -196,10 +224,10 @@ body {
     background: #D1D1D1;
 }
 
-.bananas3, .cheese3, .milk3 {
+.amount2 {
+    box-sizing: border-box;
     margin: 2%;
     margin-left: 0%;
-    float: left;
     padding: 7px 7px;
     border: solid 2px #D1D1D1;
     font: 15px "Trebuchet MS", Arial, Helvetica, sans-serif;
@@ -231,3 +259,21 @@ body {
         background: #9F5250;
     }
 
+@media only screen and (max-width: 738px) {
+    .mainContainer {
+        left: 3%;
+    }
+
+    .block1 {
+        width: 97%;
+    }
+
+    .block2 {
+        width: 95%;
+        margin-top: 2%;
+    }
+
+    .badge {
+        top: 95%;
+    }
+}
